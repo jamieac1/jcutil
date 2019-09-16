@@ -1,0 +1,43 @@
+---
+title: "jcutil"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{jcutil}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(jcutil)
+```
+
+# Introduction
+
+This package does colours, it contains some functions to do this.
+
+# Colours
+
+Sometimes you want to generate shades of a colour in a plot. The `make_shades()` function will do this for you.
+```{r shades}
+shades<-make_shades("goldenrod", 5)
+
+```
+If you want to see what shades look like you can plot them using `plot_colours()`.
+
+```{r}
+plot_colours(shades)
+
+```
+This function is also useful fro viewing any other palettes.
+
+```{r}
+plot_colours(rainbow(5))
+```
+
