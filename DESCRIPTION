@@ -20,3 +20,5 @@ Imports:
     ggplot2,
     rlang
 VignetteBuilder: knitr
+URL: https://github.com/jamieac1/jcutil
+BugReports: https://github.com/jamieac1/jcutil/issues
